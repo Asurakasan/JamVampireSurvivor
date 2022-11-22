@@ -22,6 +22,8 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D _rb;
     private CandyDrop candyDrop;
     public GameObject fx;
+    public GameObject bloodFX;
+    public GameObject deadFx;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -75,10 +77,14 @@ public class EnemyController : MonoBehaviour
         if (CurrentLife <= 0)
         {
            candyDrop.DropCandy();
-           MainGameplay.Instance.Enemies.Remove(this); 
+           MainGameplay.Instance.Enemies.Remove(this);
+           GameObject DeadFX = Instantiate(deadFx, transform.position, Quaternion.identity);
+           Destroy(DeadFX, 3);
            Destroy(gameObject);
         }
         GameObject FX = Instantiate(fx, transform.position, Quaternion.identity);
         Destroy(FX, 1);
+        GameObject blood = Instantiate(bloodFX, transform.position, Quaternion.identity);
+        Destroy(blood, 2);
     }
 }
