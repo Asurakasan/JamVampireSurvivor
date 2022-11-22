@@ -42,6 +42,7 @@ public class MainGameplay : MonoBehaviour
             SceneManager.LoadScene("EndScore");
 
         DisplayTime(InGameTimer);
+        PlayerRespawn();
 
     }
 
@@ -75,5 +76,15 @@ public class MainGameplay : MonoBehaviour
             }
         }
         return bestEnemy;
+    }
+
+    public void PlayerRespawn()
+    {
+        if (Player.GetComponent<PlayerController>().CurrentLife <= 0)
+        {
+            Player.transform.position = new Vector3(-5, -5, 0);
+            Player.GetComponent<PlayerController>().CurrentLife = Player.GetComponent<PlayerController>().MaxLife;
+            Player.GetComponent<PlayerController>().CurrentCandy = 0;
+        }
     }
 }
