@@ -21,12 +21,12 @@ public class MainMenu : MonoBehaviour
     }
 
     public void OnHovered() {
-        Button.transform.localScale = new Vector3(1.1f, 1.1f, 0);
+        Button.transform.localScale = new Vector3(Button.transform.localScale.x* 1.2f, Button.transform.localScale.y* 1.2f, 0);
     }
 
     public void OnNotHovered()
     {
-        Button.transform.localScale = new Vector3(1, 1, 0);
+        Button.transform.localScale = new Vector3(0.5f, 1.3f, 0);
     }
 
     public void OnClickCredits()
