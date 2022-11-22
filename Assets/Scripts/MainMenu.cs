@@ -11,6 +11,14 @@ public class MainMenu : MonoBehaviour
     public GameObject MenuCanvas;
     public GameObject CreditsCanvas;
     public GameObject RulesCanvas;
+    private float ScaleX;
+    private float ScaleY;
+
+    public void Start()
+    {
+        ScaleX = Button.transform.localScale.x;
+        ScaleY = Button.transform.localScale.y;
+    }
 
     public void OnClickPlay() {
         SceneManager.LoadScene(TargetRoom);
@@ -21,12 +29,12 @@ public class MainMenu : MonoBehaviour
     }
 
     public void OnHovered() {
-        Button.transform.localScale = new Vector3(Button.transform.localScale.x* 1.2f, Button.transform.localScale.y* 1.2f, 0);
+        Button.transform.localScale = new Vector3(ScaleX * 1.2f, ScaleY * 1.2f, 0);
     }
 
     public void OnNotHovered()
     {
-        Button.transform.localScale = new Vector3(0.5f, 1.3f, 0);
+        Button.transform.localScale = new Vector3(ScaleX, ScaleY, 0);
     }
 
     public void OnClickCredits()
