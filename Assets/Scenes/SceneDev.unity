@@ -240,7 +240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 300.6, y: -231.8}
+  m_AnchoredPosition: {x: 300.6, y: -231.79999}
   m_SizeDelta: {x: 30.21, y: -79.51}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &93281796
@@ -373,7 +373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.71, y: -231.8}
+  m_AnchoredPosition: {x: 315.71, y: -231.79999}
   m_SizeDelta: {x: 30.21, y: -79.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157873082
@@ -514,6 +514,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3633932044844237191, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
   m_PrefabInstance: {fileID: 3376954567177747589}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &401613625
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401613619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b51b5168f1a0ec244b470167b3425c5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &407280620
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -315.13004, y: 188.12}
+  m_AnchoredPosition: {x: -315.12997, y: 188.12}
   m_SizeDelta: {x: -700, y: -350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419637108
@@ -917,7 +937,7 @@ MonoBehaviour:
   timer: 0
   SpawnTime: 45
   NoCandyHouseText: {fileID: 8669813629633913961, guid: 193881b1cfe96d649bd8ed26085e3406, type: 3}
-  AudioCandyHouse: {fileID: 1544268427}
+  AudioCandyHouse: {fileID: 0}
 --- !u!50 &1510932937
 Rigidbody2D:
   serializedVersion: 4
@@ -939,11 +959,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!82 &1544268427 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 804481988994222424, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
-  m_PrefabInstance: {fileID: 804481987987956691}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791310989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1324,10 @@ PrefabInstance:
     - target: {fileID: 5972753027238745607, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972753027238745607, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5972753027238745607, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
       propertyPath: m_LocalPosition.x

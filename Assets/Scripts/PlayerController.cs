@@ -47,9 +47,11 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D _rb;
     public GameObject fx;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         CurrentLife = MaxLife;
         aiming = GetComponentInChildren<Aiming>();
         camera = GetComponentInChildren<Camera>();
@@ -200,14 +202,21 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-
+        Debug.Log(horizontal);
         Vector3 direction = new Vector2(horizontal, vertical);
 
         if (direction.sqrMagnitude > 0)
         {
             direction.Normalize();
             transform.position += direction * Speed * Time.deltaTime;
+            animator.SetBool("Walking", true);
         }
+        else
+            animator.SetBool("Walking", false);
+        if (horizontal > 0)
+            transform.localScale = new Vector3(0.5f, 0.5f, 1);
+        if (horizontal < 0)
+            transform.localScale = new Vector3(-0.5f, 0.5f, 1);
     }
     public void TakeDamage(float damage)
     {
