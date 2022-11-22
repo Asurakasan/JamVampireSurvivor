@@ -85,6 +85,12 @@ public class MainGameplay : MonoBehaviour
             Player.transform.position = new Vector3(-5, -5, 0);
             Player.GetComponent<PlayerController>().CurrentLife = Player.GetComponent<PlayerController>().MaxLife;
             Player.GetComponent<PlayerController>().CurrentCandy = 0;
+            // Enemies
+            GameObject[] allObjects = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject obj in allObjects)
+            {
+                Destroy(obj);
+            }
         }
     }
 }
