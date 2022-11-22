@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     public Text CandyText; 
 
     private Rigidbody2D _rb;
+    public GameObject fx;
     // Start is called before the first frame update
     void Start()
     {
@@ -195,6 +196,8 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         CurrentLife -= damage;
+        GameObject FX = Instantiate(fx, transform.position, Quaternion.identity);
+        Destroy(FX, 1);
     }
     public void Heal(float life)
     {

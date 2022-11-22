@@ -334,6 +334,7 @@ MonoBehaviour:
   CurrentCandy: 0
   MaxCandy: 100
   CandyText: {fileID: 0}
+  fx: {fileID: 6186729185025457723, guid: 77cbaeae651c1344bab74bcbd50abb0f, type: 3}
 --- !u!50 &5117082988286033250
 Rigidbody2D:
   serializedVersion: 4
