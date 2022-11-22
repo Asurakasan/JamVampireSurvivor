@@ -1672,6 +1672,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 213382729796699904, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
+      propertyPath: m_Volume
+      value: 0.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 213382729796699904, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8303960297b846a4597af1f80fea0ff1, type: 3}
     - target: {fileID: 804481988043364195, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
       propertyPath: Priority
       value: 173
@@ -2628,7 +2636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -277.47995, y: 187.05}
+  m_AnchoredPosition: {x: -277.47998, y: 187.05}
   m_SizeDelta: {x: -648.22, y: -425.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049119654
