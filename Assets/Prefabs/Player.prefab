@@ -316,10 +316,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1482f50dd94184b9a94dc0fb609185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLife: 10
+  MaxLife: 15
   CurrentLife: 0
   HealthBar: {fileID: 0}
   PrefabBullet: {fileID: 3633932044844237191, guid: 4660ac6ef21504147b176616fca71ee3, type: 3}
+  PrefabBomb: {fileID: 6463499848543226831, guid: 3f4d55a356f097e4f8ac47bafb1412a7, type: 3}
   CoolDownWeapon0: 2
   CoolDownWeapon1: 2
   CoolDownWeapon2: 2
