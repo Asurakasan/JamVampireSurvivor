@@ -154,6 +154,8 @@ MonoBehaviour:
   Speed: 3
   Damage: 1
   fx: {fileID: 1429954232896169633, guid: e697292643b442d4880d274358131a30, type: 3}
+  bloodFX: {fileID: 100000, guid: 350a5d62c2f7c3d47b5467a7b779a871, type: 3}
+  deadFx: {fileID: 100004, guid: ab1bf4eb485d5a845adbff2ccc1b9b38, type: 3}
 --- !u!114 &30047588836592604
 MonoBehaviour:
   m_ObjectHideFlags: 0
