@@ -91,6 +91,9 @@ public class MainGameplay : MonoBehaviour
             {
                 Destroy(obj);
             }
+
+            // Audio
+            Player.GetComponent<PlayerController>().DeathPlayer.Play(0);
         }
     }
 }

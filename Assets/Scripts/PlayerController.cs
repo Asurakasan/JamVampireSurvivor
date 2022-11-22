@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     [Header("Audio")]
     public AudioSource AudioShoot;
     public AudioSource AudioCandyGet;
+    public AudioSource DeathPlayer;
 
     private Rigidbody2D _rb;
     public GameObject fx;

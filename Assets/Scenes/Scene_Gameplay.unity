@@ -1348,6 +1348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 658422266}
     - target: {fileID: 6828276246516835449, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
+      propertyPath: DeathPlayer
+      value: 
+      objectReference: {fileID: 658422267}
+    - target: {fileID: 6828276246516835449, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
       propertyPath: AudioCandyGet
       value: 
       objectReference: {fileID: 658422265}
@@ -1751,6 +1755,11 @@ AudioSource:
 --- !u!82 &658422266 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 804481989717543562, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
+  m_PrefabInstance: {fileID: 658422263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &658422267 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 213382729796699904, guid: 4c82904232e4c814e8c178ec4fe7a904, type: 3}
   m_PrefabInstance: {fileID: 658422263}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &674383799 stripped
@@ -2607,7 +2616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -277.47998, y: 187.05}
+  m_AnchoredPosition: {x: -277.47995, y: 187.05}
   m_SizeDelta: {x: -648.22, y: -425.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049119654
