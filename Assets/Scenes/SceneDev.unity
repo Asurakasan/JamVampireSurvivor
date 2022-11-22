@@ -240,7 +240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 300.6, y: -231.8}
+  m_AnchoredPosition: {x: 300.6, y: -231.79999}
   m_SizeDelta: {x: 30.21, y: -79.51}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &93281796
@@ -368,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.71, y: -231.8}
+  m_AnchoredPosition: {x: 315.71, y: -231.79999}
   m_SizeDelta: {x: 30.21, y: -79.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157873082
@@ -583,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -315.13004, y: 188.12}
+  m_AnchoredPosition: {x: -315.13, y: 188.12}
   m_SizeDelta: {x: -700, y: -350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419637108
@@ -1289,6 +1289,10 @@ PrefabInstance:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 93281794}
+    - target: {fileID: 6828276246516835449, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
+      propertyPath: PrefabBomb
+      value: 
+      objectReference: {fileID: 6463499848543226831, guid: 3f4d55a356f097e4f8ac47bafb1412a7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c3987bd5113f804c9f3a7f0394753f7, type: 3}
 --- !u!1 &4098126190579216838

@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Shoot")]
     public GameObject PrefabBullet;
+    public GameObject PrefabBomb;
     public float CoolDownWeapon0 = 2;
     public float CoolDownWeapon1 = 2;
     public float CoolDownWeapon2 = 2;
@@ -65,11 +66,33 @@ public class PlayerController : MonoBehaviour
             Triple();
         if (index == 2)
             Cross();
+        if (index == 3)
+            Bomb();
 
         HealthBarUpdate();
 
         // Update Candies Number
         CandyText.text = "Candies: " + CurrentCandy.ToString() + "/" + MaxCandy.ToString();
+    }
+
+    private void Bomb()
+    {
+        if (MainGameplay.Instance.Enemies.Count > 0)
+        {
+            _timerCoolDown += Time.deltaTime;
+
+            if (_timerCoolDown < CoolDownWeapon3)
+                return;
+
+            _timerCoolDown -= CoolDownWeapon3;
+            GameObject go = Instantiate(PrefabBomb, aiming.transform.position, Quaternion.identity);
+            GameObject go1 = Instantiate(PrefabBomb, aiming.transform.position, Quaternion.identity);
+            GameObject go2 = Instantiate(PrefabBomb, aiming.transform.position, Quaternion.identity);
+            go.GetComponent<Bomb>().Initialize(new Vector2(aim.x + 0.4f, aim.y + 0.4f));
+            go1.GetComponent<Bomb>().Initialize(new Vector2(aim.x - 0.4f, aim.y - 0.4f));
+            go2.GetComponent<Bomb>().Initialize(-aim);
+
+        }
     }
 
     private void Cross()

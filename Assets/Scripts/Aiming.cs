@@ -22,6 +22,10 @@ public class Aiming : MonoBehaviour
         if (MousePos.x != 0 || MousePos.y != 0)
         {
             aim = MousePos - transform.position;
+            if(aim.sqrMagnitude > 0)
+            {
+                aim.Normalize();
+            }
             float rotZ = Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
