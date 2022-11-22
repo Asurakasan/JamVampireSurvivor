@@ -49,9 +49,10 @@ MonoBehaviour:
   - {fileID: 7654918703708801626, guid: bc63bbf30f2977e4d9ed2c16afa08b56, type: 3}
   - {fileID: 7654918703708801626, guid: e5168ffa3ba6ab94f9bfe9a2f2b2b7ef, type: 3}
   SpawnTime: 5
-  NumberSpawnMin: 10
-  NumberSpawnMax: 10
+  NumberSpawnMin: 5
+  NumberSpawnMax: 5
   IsActive: 1
+  SpawnTrigger: {fileID: 0}
 --- !u!212 &3399746695153783808
 SpriteRenderer:
   m_ObjectHideFlags: 0

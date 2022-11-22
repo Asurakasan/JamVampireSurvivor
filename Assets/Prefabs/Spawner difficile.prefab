@@ -51,8 +51,8 @@ MonoBehaviour:
   - {fileID: 7654918703708801626, guid: e5168ffa3ba6ab94f9bfe9a2f2b2b7ef, type: 3}
   - {fileID: 7654918703708801626, guid: 69f25a8d59fe2ef44ad47fc5eaa8d194, type: 3}
   SpawnTime: 5
-  NumberSpawnMin: 15
-  NumberSpawnMax: 15
+  NumberSpawnMin: 7
+  NumberSpawnMax: 7
   IsActive: 0
   SpawnTrigger: {fileID: 4910107293489608755, guid: b6549f71ac9427b49a7b5a2229d6ae1a, type: 3}
 --- !u!58 &2255062269026811617
