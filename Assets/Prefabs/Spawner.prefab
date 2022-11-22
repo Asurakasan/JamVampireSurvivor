@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9194226958894516701}
   - component: {fileID: 5081975228865471746}
+  - component: {fileID: 775217312037956812}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -51,3 +52,21 @@ MonoBehaviour:
   SpawnTime: 1
   NumberSpawnMin: 5
   NumberSpawnMax: 10
+  IsActive: 0
+  SpawnTrigger: {fileID: 4910107293489608755, guid: b6549f71ac9427b49a7b5a2229d6ae1a, type: 3}
+--- !u!58 &775217312037956812
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503696978403040740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
