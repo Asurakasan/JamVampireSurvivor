@@ -153,6 +153,7 @@ MonoBehaviour:
   knockbackPower: 100
   Speed: 3
   Damage: 1
+  fx: {fileID: 1429954232896169633, guid: e697292643b442d4880d274358131a30, type: 3}
 --- !u!114 &30047588836592604
 MonoBehaviour:
   m_ObjectHideFlags: 0

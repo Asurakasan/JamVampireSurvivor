@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
     private GameObject _player;
     private Rigidbody2D _rb;
     private CandyDrop candyDrop;
+    public GameObject fx;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -77,5 +78,7 @@ public class EnemyController : MonoBehaviour
            MainGameplay.Instance.Enemies.Remove(this); 
            Destroy(gameObject);
         }
+        GameObject FX = Instantiate(fx, transform.position, Quaternion.identity);
+        Destroy(FX, 1);
     }
 }
