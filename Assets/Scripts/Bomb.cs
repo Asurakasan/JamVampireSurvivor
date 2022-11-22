@@ -13,6 +13,7 @@ public class Bomb : MonoBehaviour
     private float timer;
     private Vector3 _direction;
     public int damage;
+    public GameObject Fx;
 
     public void Initialize(Vector3 direction)
     {
@@ -43,7 +44,10 @@ public class Bomb : MonoBehaviour
             Vector2 direction = obj.transform.position - transform.position;
             obj.GetComponent<Rigidbody2D>().AddForce(direction * Force);
             obj.GetComponent<EnemyController>().TakeDamage(damage);
+            GameObject fx = Instantiate(Fx, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Destroy(fx, 1);
+
         }
         Destroy(gameObject);
     }
