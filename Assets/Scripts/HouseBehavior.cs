@@ -12,6 +12,9 @@ public class HouseBehavior : MonoBehaviour
     public float SpawnTime = 45f;
     public GameObject NoCandyHouseText;
 
+    [Header("Audio")]
+    public AudioSource AudioCandyHouse;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -37,6 +40,7 @@ public class HouseBehavior : MonoBehaviour
                 HouseCandy += collision.gameObject.GetComponent<PlayerController>().CurrentCandy;
                 collision.gameObject.GetComponent<PlayerController>().CurrentCandy = 0;
                 timer = 0;
+                AudioCandyHouse.Play(0);
             }
 
         }

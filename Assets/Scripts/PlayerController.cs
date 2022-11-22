@@ -39,7 +39,11 @@ public class PlayerController : MonoBehaviour
     [Header("Candy")]
     public int CurrentCandy;
     public int MaxCandy;
-    public Text CandyText; 
+    public Text CandyText;
+
+    [Header("Audio")]
+    public AudioSource AudioShoot;
+    public AudioSource AudioCandyGet;
 
     private Rigidbody2D _rb;
     // Start is called before the first frame update
@@ -84,6 +88,9 @@ public class PlayerController : MonoBehaviour
             if (_timerCoolDown < CoolDownWeapon3)
                 return;
 
+
+            AudioShoot.Play(0);
+
             _timerCoolDown -= CoolDownWeapon3;
             GameObject go = Instantiate(PrefabBomb, aiming.transform.position, Quaternion.identity);
             GameObject go1 = Instantiate(PrefabBomb, aiming.transform.position, Quaternion.identity);
@@ -103,6 +110,9 @@ public class PlayerController : MonoBehaviour
 
             if (_timerCoolDown < CoolDownWeapon1)
                 return;
+
+
+            AudioShoot.Play(0);
 
             _timerCoolDown -= CoolDownWeapon1;
             GameObject go = Instantiate(PrefabBullet, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
@@ -126,6 +136,9 @@ public class PlayerController : MonoBehaviour
             if (_timerCoolDown < CoolDownWeapon1)
                 return;
 
+
+            AudioShoot.Play(0);
+
             _timerCoolDown -= CoolDownWeapon1;
             GameObject go = Instantiate(PrefabBullet, aiming.transform.position, Quaternion.identity);
             GameObject go1 = Instantiate(PrefabBullet, aiming.transform.position, Quaternion.identity);
@@ -148,6 +161,9 @@ public class PlayerController : MonoBehaviour
 
             if (_timerCoolDown < CoolDownWeapon0)
                 return;
+
+
+            AudioShoot.Play(0);
 
             _timerCoolDown -= CoolDownWeapon0;
             GameObject go = Instantiate(PrefabBullet, transform.position, Quaternion.identity);
@@ -216,6 +232,7 @@ public class PlayerController : MonoBehaviour
         {
             if (CurrentCandy < MaxCandy)
             {
+                AudioCandyGet.Play(0);
                 CurrentCandy += 1;
                 Destroy(collision.gameObject);
             }
