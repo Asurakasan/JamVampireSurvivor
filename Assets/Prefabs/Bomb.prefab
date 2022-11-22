@@ -105,3 +105,4 @@ MonoBehaviour:
   FieldOfImpact: 3
   Force: 200
   damage: 4
+  Fx: {fileID: 725748389856807714, guid: dcac0cba47916a341b6c684efb50153b, type: 3}
