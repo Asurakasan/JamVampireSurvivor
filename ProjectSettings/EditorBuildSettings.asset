@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScore.unity
     guid: 33dfd3ea251effa4e8110b53a849e525
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneDev.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
